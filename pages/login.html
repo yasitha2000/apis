@@ -100,7 +100,7 @@
     <input type="submit" value="Register" onclick="register()">
     <p id="registerMessage"></p>
     <p class="switch-link" onclick="toggleForms()">
-      Sudah punya akun? Login di sini
+      Already have an account.? Log in here
     </p>
     <a href="/profile">profile</a>
   </div>
@@ -113,7 +113,7 @@
     <input class="anu" type="submit" value="Login" onclick="login()">
     <p id="loginMessage"></p>
     <p class="switch-link" onclick="toggleForms()">
-      Belum punya akun? Daftar di sini
+      Don't have an account yet.? Register here
     </p>
     <a href="/profile">profile</a>
   </div>
@@ -174,7 +174,7 @@
       .then(data => {
         document.getElementById('loginMessage').textContent = data.message;
         if (data.success) {
-          alert("Login sukses!");
+          alert("Login successful !!, Welcome To DYXT Apis");
         }
       });
     }
